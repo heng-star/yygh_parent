@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>common</module>
+        <module>model</module>
+        <module>service</module>
+        <!--<module>service_client</module>-->
+        <!--<module>service_gateway</module>-->
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/>
+        <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.atguigu</groupId>
+    <artifactId>yygh_parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>yygh_parent</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <cloud.version>Hoxton.RELEASE</cloud.version>
+        <alibaba.version>2.2.0.RELEASE</alibaba.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <mysql.version>5.1.46</mysql.version>
+        <swagger.version>2.7.0</swagger.version>
+        <jwt.version>0.7.0</jwt.version>
+        <fastjson.version>1.2.29</fastjson.version>
+        <httpclient.version>4.5.1</httpclient.version>
+        <easyexcel.version>2.2.0-beta2</easyexcel.version>
+        <aliyun.version>4.1.1</aliyun.version>
+        <oss.version>3.9.1</oss.version>
+        <jodatime.version>2.10.1</jodatime.version>
+    </properties>
+
+    <!--配置dependencyManagement锁定依赖的版本-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--mybatis-plus 持久层-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!--swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <!--swagger ui-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${easyexcel.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${oss.version}</version>
+            </dependency>
+
+            <!--日期时间工具-->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${jodatime.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.2.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 项目打包时会将java目录中的*.xml文件也进行打包 -->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <!-- 数据库连接池 -->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+        <!--<property name="driverClass" value="org.mariadb.jdbc.Driver" />-->
+        <!--<property name="jdbcUrl" value="jdbc:mariadb://localhost:3306/yygh_parent" />-->
+        <!--<property name="user" value="root" />-->
+        <!--<property name="password" value="" />-->
+
+        <!--&lt;!&ndash; c3p0连接池的私有属性 &ndash;&gt;-->
+        <!--<property name="maxPoolSize" value="30" />-->
+        <!--<property name="minPoolSize" value="10" />-->
+        <!--&lt;!&ndash; 关闭连接后不自动commit &ndash;&gt;-->
+        <!--<property name="autoCommitOnClose" value="false" />-->
+        <!--&lt;!&ndash; 获取连接超时时间 &ndash;&gt;-->
+        <!--<property name="checkoutTimeout" value="10000" />-->
+        <!--&lt;!&ndash; 当获取连接失败重试次数 &ndash;&gt;-->
+        <!--<property name="acquireRetryAttempts" value="2" />-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 配置SqlSessionFactory对象 &ndash;&gt;-->
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--&lt;!&ndash; 注入数据库连接池 &ndash;&gt;-->
+        <!--<property name="dataSource" ref="dataSource" />-->
+        <!--&lt;!&ndash; 配置MyBaties全局配置文件:mybatis-config.xml &ndash;&gt;-->
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml" />-->
+        <!--&lt;!&ndash; 扫描entity包 使用别名 &ndash;&gt;-->
+        <!--<property name="typeAliasesPackage" value="com.wbg.springJavaConfig.dao" />-->
+        <!--&lt;!&ndash; 扫描sql配置文件:mapper需要的xml文件 &ndash;&gt;-->
+        <!--<property name="mapperLocations" value="com.atguigu.yygh.hosp.mapper/mapper/*.xml" />-->
+    <!--</bean>-->
+
+</project>

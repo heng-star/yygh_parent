@@ -1,0 +1,300 @@
+2021-03-28 09:56:32,171 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 09:56:32,175 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 10:11:55,024 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616897495387
+
+2021-03-28 10:12:10,299 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 10:12:10,299 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 10:12:13,442 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 10:12:13,442 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 16:27:58,059 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616920061194
+
+2021-03-28 16:28:13,116 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 16:28:13,116 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 16:57:45,001 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 16:57:45,001 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 17:06:42,381 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616922385990
+
+2021-03-28 17:06:56,130 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_false,
+
+2021-03-28 17:07:00,779 INFO service: DEFAULT_GROUP@@servic_hosp {POS} {IP-ENABLED} valid: 10.163.130.143:8201@DEFAULT, region: unknown, msg: client beat ok
+
+2021-03-28 19:05:12,277 INFO DEFAULT_GROUP@@service_cmn {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8202:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 19:05:12,279 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service_cmn, ips: 10.163.130.143:8202_true,
+
+2021-03-28 20:05:47,011 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933128511
+
+2021-03-28 20:06:02,283 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:06:02,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:07:16,924 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:07:16,924 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:08:40,210 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:08:40,210 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:09:21,461 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:09:21,461 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:10:28,123 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933411495
+
+2021-03-28 20:10:43,148 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:10:43,148 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:10:52,494 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:10:52,494 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:11:08,185 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933452494
+
+2021-03-28 20:11:08,520 INFO service: DEFAULT_GROUP@@servic_hosp {POS} {IP-ENABLED} valid: 10.163.130.143:8201@DEFAULT, region: unknown, msg: client beat ok
+
+2021-03-28 20:11:48,281 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933488592
+
+2021-03-28 20:11:57,445 INFO service: DEFAULT_GROUP@@servic_hosp {POS} {IP-ENABLED} valid: 10.163.130.143:8201@DEFAULT, region: unknown, msg: client beat ok
+
+2021-03-28 20:12:13,309 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933517445
+
+2021-03-28 20:12:28,343 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:12:28,345 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:13:35,020 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:13:35,020 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:14:04,046 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933626342
+
+2021-03-28 20:14:19,075 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:14:19,075 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:14:35,818 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:14:35,818 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:15:04,553 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616933686882
+
+2021-03-28 20:15:19,590 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:15:19,590 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:15:45,366 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:15:45,367 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:15:45,700 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:15:45,700 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:18:06,276 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:18:06,277 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:48:49,560 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616935711107
+
+2021-03-28 20:49:04,594 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:49:04,595 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:49:30,191 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:49:30,191 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:49:59,770 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616935780117
+
+2021-03-28 20:50:05,326 INFO service: DEFAULT_GROUP@@servic_hosp {POS} {IP-ENABLED} valid: 10.163.130.143:8201@DEFAULT, region: unknown, msg: client beat ok
+
+2021-03-28 20:50:59,892 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616935841316
+
+2021-03-28 20:51:14,927 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:51:14,927 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:52:36,179 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:52:36,179 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:53:05,120 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616935967703
+
+2021-03-28 20:53:20,162 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:53:20,162 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:53:49,017 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:53:49,017 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:54:05,210 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616936029016
+
+2021-03-28 20:54:20,238 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 20:54:20,238 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:56:26,628 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:56:26,628 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 20:58:03,130 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:58:03,130 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 20:58:42,822 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 20:58:42,823 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:03:46,387 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616936608109
+
+2021-03-28 21:04:01,427 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:04:01,427 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:04:17,759 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:04:17,760 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:08:03,977 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8202@DEFAULT@DEFAULT_GROUP@@service_cmn, region: unknown, msg: client timeout after 15000, last beat: 1616936863987
+
+2021-03-28 21:08:14,028 INFO DEFAULT_GROUP@@service_cmn {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8202:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:08:14,028 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service_cmn, ips: 
+
+2021-03-28 21:08:46,957 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616936907950
+
+2021-03-28 21:09:01,999 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:09:01,999 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:09:26,979 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:09:26,979 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:10:42,375 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616937024135
+
+2021-03-28 21:10:55,407 INFO service: DEFAULT_GROUP@@servic_hosp {POS} {IP-ENABLED} valid: 10.163.130.143:8201@DEFAULT, region: unknown, msg: client beat ok
+
+2021-03-28 21:11:12,436 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616937055407
+
+2021-03-28 21:11:27,487 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:11:27,487 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:11:37,720 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:11:37,720 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:13:46,428 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:13:46,428 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:14:29,937 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:14:29,937 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:19:43,551 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616937565282
+
+2021-03-28 21:19:58,621 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:19:58,621 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:20:13,983 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:20:13,984 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:33:31,581 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616938392008
+
+2021-03-28 21:33:46,659 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:33:46,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:33:57,823 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:33:57,823 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:38:47,266 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616938708273
+
+2021-03-28 21:39:02,342 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:39:02,342 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:39:14,888 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:39:14,888 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:41:12,591 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616938854753
+
+2021-03-28 21:41:27,618 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:41:27,619 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:41:36,536 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:41:36,536 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:48:18,453 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616939282185
+
+2021-03-28 21:48:33,489 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:48:33,489 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:48:53,060 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:48:53,060 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 21:57:29,700 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616939834262
+
+2021-03-28 21:57:44,762 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 21:57:44,762 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 21:57:57,976 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 21:57:57,976 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 22:18:17,189 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616941081026
+
+2021-03-28 22:18:32,222 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 22:18:32,222 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 22:18:33,342 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 22:18:33,343 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 22:29:18,355 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616941740124
+
+2021-03-28 22:29:33,415 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 22:29:33,416 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 22:40:15,962 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 22:40:15,962 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 22:44:10,078 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616942631281
+
+2021-03-28 22:44:25,114 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2021-03-28 22:44:25,114 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 
+
+2021-03-28 22:46:20,303 INFO DEFAULT_GROUP@@servic_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.130.143:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-03-28 22:46:20,303 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@servic_hosp, ips: 10.163.130.143:8201_true,
+
+2021-03-28 23:00:26,884 INFO {POS} {IP-DISABLED} valid: 10.163.130.143:8201@DEFAULT@DEFAULT_GROUP@@servic_hosp, region: unknown, msg: client timeout after 15000, last beat: 1616943607525
+
