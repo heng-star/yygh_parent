@@ -1,10 +1,11 @@
 package com.atguigu.hospital.controller;
 
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import javax.servlet.http.HttpServletRequest;
 
 
@@ -40,6 +41,7 @@ public class IndexController {
 	@RequestMapping(value = "/main",method = RequestMethod.GET)
 	public String main() {
 
+		//2021.07.23  github 提交测试
 		return PAGE_MAIN;
 	}
 
