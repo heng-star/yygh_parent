@@ -8,6 +8,7 @@ import com.atguigu.yygh.common.utils.MD5;
 import com.atguigu.yygh.hosp.service.DepartmentService;
 import com.atguigu.yygh.hosp.service.HospitalService;
 import com.atguigu.yygh.hosp.service.HospitalSetService;
+import com.atguigu.yygh.hosp.service.ScheduleService;
 import com.atguigu.yygh.model.hosp.Department;
 import com.atguigu.yygh.vo.hosp.DepartmentQueryVo;
 import io.swagger.annotations.Api;
@@ -36,6 +37,8 @@ public class ApiController {
     @Autowired
     private HospitalSetService hospitalSetService;
 
+    @Autowired
+    private ScheduleService scheduleService;
 
     @ApiOperation(value = "获取医院信息")
     @PostMapping("hospital/show")
@@ -47,7 +50,7 @@ public class ApiController {
             throw new YyghException(ResultCodeEnum.PARAM_ERROR);
         }
 //签名校验
-        if(HttpRequestHelper.isSignEquals(paramMap, hospitalSetService.getSignKey(hoscode))) {
+        if(!HttpRequestHelper.isSignEquals(paramMap, hospitalSetService.getSignKey(hoscode))) {
             throw new YyghException(ResultCodeEnum.SIGN_ERROR);
         }
 
@@ -70,18 +73,17 @@ public class ApiController {
         String signKeyMd5 = MD5.encrypt(signKey);
 
         //4判断签名是否一致
-        if(  hospSign.equals(signKeyMd5)){
+        //MD5.encrypt(674c4139707728439a6510eae12deea9);
+        if(!hospSign.equals(signKeyMd5)){
             throw new YyghException(ResultCodeEnum.SIGN_ERROR);
         }
 
         //传输过程中“+”转换为了“ ”，因此我们要转换回来
         String logoDataString = (String)paramMap.get("logoData");
         if(!StringUtils.isEmpty(logoDataString)) {
-            String logoData = logoDataString.replaceAll("", "+");
+            String logoData = logoDataString.replaceAll(" ","+");
             paramMap.put("logoData", logoData);
         }
-
-
 
         hospitalService.save(paramMap);
         return Result.ok();
@@ -94,14 +96,14 @@ public class ApiController {
     public Result saveDepartment(HttpServletRequest request) {
         Map<String, Object> paramMap = HttpRequestHelper.switchMap(request.getParameterMap());
 //        //必须参数校验 略
-//        String hoscode = (String)paramMap.get("hoscode");
+        String hoscode = (String)paramMap.get("hoscode");
 //        if(StringUtils.isEmpty(hoscode)) {
 //            throw new YyghException(ResultCodeEnum.PARAM_ERROR);
 //        }
 //        //签名校验
-//        if(!HttpRequestHelper.isSignEquals(paramMap, hospitalSetService.getSignKey(hoscode))) {
-//            throw new YyghException(ResultCodeEnum.SIGN_ERROR);
-//        }
+        if(!HttpRequestHelper.isSignEquals(paramMap, hospitalSetService.getSignKey(hoscode))) {
+            throw new YyghException(ResultCodeEnum.SIGN_ERROR);
+        }
 
         departmentService.save(paramMap);
         return Result.ok();
@@ -131,6 +133,23 @@ public class ApiController {
         departmentQueryVo.setDepcode(depcode);
         Page<Department> pageModel = departmentService.selectPage(page, limit, departmentQueryVo);
         return Result.ok(pageModel);
+    }
+
+    //删除科室接口
+    //删除排班
+    @PostMapping("schedule/remove")
+    public Result remove(HttpServletRequest request) {
+        //获取传递过来科室信息
+        Map<String, String[]> requestMap = request.getParameterMap();
+        Map<String, Object> paramMap = HttpRequestHelper.switchMap(requestMap);
+        //获取医院编号和排班编号
+        String hoscode = (String)paramMap.get("hoscode");
+        String hosScheduleId = (String)paramMap.get("hosScheduleId");
+
+        //TODO 签名校验
+
+        scheduleService.remove(hoscode,hosScheduleId);
+        return Result.ok();
     }
 
 

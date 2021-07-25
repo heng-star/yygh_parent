@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface HospitalRepository extends MongoRepository<Hospital,String> {
-    //判断是否存在数据
+    //判断是否存在数据,这里按照MongoDB规范实现自动创建关联方法
     Hospital getHospitalByHoscode(String hoscode);
 
     //根据医院名称查询

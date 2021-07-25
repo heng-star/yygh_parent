@@ -30,6 +30,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+//import org.springframework.util.StringUtils.replaceAll;
+
 @Service
 @Slf4j
 public class ApiServiceImpl implements ApiService {
@@ -100,9 +102,12 @@ public class ApiServiceImpl implements ApiService {
 
         paramMap.put("timestamp", HttpRequestHelper.getTimestamp());
         paramMap.put("sign", HttpRequestHelper.getSign(paramMap, this.getSignKey()));
+//        paramMap.put("sign", jsonObject.getString("sign"));
 
         JSONObject respone = HttpRequestHelper.sendRequest(paramMap,this.getApiUrl()+"/api/hosp/saveHospital");
-        System.out.println(respone.toJSONString());
+       // System.out.println(respone.toJSONString());
+//        Object inforesponse=  paramMap.get(logoData);
+//        System.out.println(inforesponse+">>>>>>>>>>>");
 
         if(null != respone && 200 == respone.getIntValue("code")) {
             return true;
@@ -157,7 +162,7 @@ public class ApiServiceImpl implements ApiService {
             paramMap.put("bigname",jsonObject.getString("bigname"));
 
             paramMap.put("timestamp", HttpRequestHelper.getTimestamp());
-            paramMap.put("sign",HttpRequestHelper.getSign(paramMap, this.getSignKey()));
+            paramMap.put("sign",MD5.encrypt(this.getSignKey()));
             JSONObject respone = HttpRequestHelper.sendRequest(paramMap,this.getApiUrl()+"/api/hosp/saveDepartment");
             System.out.println(respone.toJSONString());
 
