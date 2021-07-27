@@ -2,7 +2,7 @@ package com.atguigu.yygh.hosp.service;
 
 import com.atguigu.yygh.model.hosp.Hospital;
 import com.atguigu.yygh.vo.hosp.HospitalQueryVo;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.springframework.data.domain.Page;
 
 import java.util.Map;
 
@@ -29,6 +29,8 @@ public interface HospitalService {
 //
     //获取医院名称
     String getHospName(String hoscode);
+
+    void updateStatus(String id, Integer status);
 //
 //    //根据医院名称查询
 //    List<Hospital> findByHosname(String hosname);

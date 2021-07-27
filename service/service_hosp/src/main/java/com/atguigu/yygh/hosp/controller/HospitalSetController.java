@@ -1,6 +1,7 @@
 package com.atguigu.yygh.hosp.controller;
 
 //import com.atguigu.yygh.common.exception.YyghException;
+
 import com.atguigu.yygh.common.result.Result;
 import com.atguigu.yygh.common.utils.MD5;
 import com.atguigu.yygh.hosp.service.HospitalSetService;
@@ -20,8 +21,9 @@ import java.util.Random;
 
 @Api(tags = "医院设置管理")
 @RestController
+@ResponseBody
 @RequestMapping("/admin/hosp/hospitalSet")
-@CrossOrigin
+//@CrossOrigin
 public class HospitalSetController {
 
     //注入service
@@ -77,8 +79,13 @@ public class HospitalSetController {
     }
 
     //4 添加医院设置
-    @PostMapping("saveHospitalSet")
+    //@CrossOrigin(origins = "http://localhost:8201")
+//            allowedHeaders = "*", methods = {}, allowCredentials = "true")
+    //@ResponseBody
+    //为什么困了几天的bug 改个名都能消除
+    @RequestMapping(value="savehospitalset",method = RequestMethod.POST)
     public Result saveHospitalSet(@RequestBody HospitalSet hospitalSet) {
+
         //设置状态 1 使用 0 不能使用
         hospitalSet.setStatus(1);
         //签名秘钥
