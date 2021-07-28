@@ -2,6 +2,7 @@ package com.atguigu.yygh.hosp.controller;
 
 //import com.atguigu.yygh.common.exception.YyghException;
 
+import com.atguigu.yygh.cmn.client.DictFeignClient;
 import com.atguigu.yygh.common.result.Result;
 import com.atguigu.yygh.common.utils.MD5;
 import com.atguigu.yygh.hosp.service.HospitalSetService;
@@ -29,6 +30,9 @@ public class HospitalSetController {
     //注入service
     @Autowired
     private HospitalSetService hospitalSetService;
+
+    @Autowired
+    private DictFeignClient dictFeignClient;
 
     // http://localhost:8201/admin/hosp/hospitalSet/findAll
 

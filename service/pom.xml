@@ -15,6 +15,7 @@
         <module>service_user</module>
         <module>service_hosp</module>
         <module>service_cmn</module>
+        <module>service_client</module>
         <!--<module>service_msm</module>-->
         <!--<module>service_oss</module>-->
         <!--<module>service_order</module>-->
@@ -116,5 +117,9 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
+
+
+
     </dependencies>
 </project>
