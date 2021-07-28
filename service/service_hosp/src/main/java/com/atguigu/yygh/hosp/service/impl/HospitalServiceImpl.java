@@ -93,7 +93,7 @@ public class HospitalServiceImpl implements HospitalService {
         //单独处理更直观
         result.put("bookingRule", hospital.getBookingRule());
         //不需要重复返回
-        hospital.setBookingRule(null);
+        //hospital.setBookingRule(null);
         return result;
     }
 
@@ -110,7 +110,12 @@ public class HospitalServiceImpl implements HospitalService {
 
     @Override
     public void updateStatus(String id, Integer status) {
-
+        if(status.intValue() == 0 || status.intValue() == 1) {
+            Hospital hospital = hospitalRepository.findById(id).get();
+            hospital.setStatus(status);
+            hospital.setUpdateTime(new Date());
+            hospitalRepository.save(hospital);
+        }
     }
 
     //获取查询list集合，遍历进行医院等级封装
