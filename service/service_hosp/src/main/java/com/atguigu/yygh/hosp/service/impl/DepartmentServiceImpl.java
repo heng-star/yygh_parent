@@ -121,6 +121,7 @@ public class DepartmentServiceImpl implements DepartmentService {
             String bigcode = entry.getKey();
             //大科室编号对应的全局数据
             List<Department> deparment1List = entry.getValue();
+
             //封装大科室
             DepartmentVo departmentVo1 = new DepartmentVo();
             departmentVo1.setDepcode(bigcode);
