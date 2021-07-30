@@ -25,5 +25,6 @@ public class DepartmentController {
     public Result getDeptList(@PathVariable String hoscode) {
         List<DepartmentVo> list = departmentService.findDeptTree(hoscode);
         return Result.ok(list);
+        //
     }
 }
