@@ -10,6 +10,7 @@
         <module name="common_util" />
         <module name="hospital-manage" />
         <module name="model" />
+        <module name="server_gateway" />
         <module name="service_cmn" />
         <module name="service_cmn_client" />
         <module name="service_hosp" />
@@ -22,6 +23,8 @@
       <module name="common_util" target="1.8" />
       <module name="hospital-manage" target="1.8" />
       <module name="model" target="1.8" />
+      <module name="server_gateway" target="1.8" />
+      <module name="servergateway" target="1.8" />
       <module name="service" target="1.8" />
       <module name="service_client" target="1.8" />
       <module name="service_cmn" target="1.8" />
@@ -37,6 +40,8 @@
       <module name="common_util" options="-parameters" />
       <module name="hospital-manage" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="server_gateway" options="-parameters" />
+      <module name="servergateway" options="-parameters" />
       <module name="service" options="" />
       <module name="service_client" options="-parameters" />
       <module name="service_cmn" options="-parameters" />

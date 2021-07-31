@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/service/service_cmn/pom.xml" />
         <option value="$PROJECT_DIR$/service/service_hosp/pom.xml" />
         <option value="$PROJECT_DIR$/hospital-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/service/server_gateway/pom.xml" />
       </list>
     </option>
   </component>

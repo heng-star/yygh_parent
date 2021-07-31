@@ -7,12 +7,12 @@
         <groupId>com.atguigu</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
+    <modelVersion>0.0.1-SNAPSHOT</modelVersion>
     <artifactId>common_util</artifactId>
     <groupId>com.atguigu</groupId>
     <packaging>jar</packaging>
-    <name>common-util</name>
-    <description>common-util</description>
+    <name>common_util</name>
+    <description>common_util</description>
 
     <dependencies>
         <dependency>

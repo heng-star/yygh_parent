@@ -16,6 +16,7 @@
         <module>service_hosp</module>
         <module>service_cmn</module>
         <module>service_client</module>
+        <!--<module>server_gateway</module>-->
         <!--<module>service_msm</module>-->
         <!--<module>service_oss</module>-->
         <!--<module>service_order</module>-->
@@ -74,6 +75,7 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
+            <!--<version>{version}</version>-->
         </dependency>
 
         <dependency>
