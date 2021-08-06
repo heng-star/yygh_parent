@@ -13,6 +13,7 @@ import com.tencentcloudapi.common.profile.HttpProfile;
 import com.tencentcloudapi.sms.v20210111.SmsClient;
 import com.tencentcloudapi.sms.v20210111.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20210111.models.SendSmsResponse;
+import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -21,6 +22,7 @@ import java.util.Map;
 
 @Service
 public class MsmServiceImpl  implements MsmService  {
+    @SneakyThrows
     @Override
     public boolean send(String phone, String code) throws IOException {
 
@@ -42,7 +44,7 @@ public class MsmServiceImpl  implements MsmService  {
         String templateParamSetstring =code;
         String[] templateParamSet=templateParamSetstring.split("@");
 
-        try {
+        //try {
             /* 必要步骤：
              * 实例化一个认证对象，入参需要传入腾讯云账户密钥对secretId，secretKey。
              * 这里采用的是从环境变量读取的方式，需要在环境变量中先设置这两个值。
@@ -122,13 +124,9 @@ public class MsmServiceImpl  implements MsmService  {
             String coderesult = subObject.get("Code").getAsString();
 
             //发送成功，返回true
-            if(coderesult.equals("OK")){
-                return true;
-            }
-        } catch (TencentCloudSDKException e) {
-            e.printStackTrace();
+        if(!coderesult.isEmpty()){
+            return true;
         }
-
         return false;
     }
 
