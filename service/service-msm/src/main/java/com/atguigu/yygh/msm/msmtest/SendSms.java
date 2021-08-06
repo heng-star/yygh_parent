@@ -1,5 +1,8 @@
 package com.atguigu.yygh.msm.msmtest;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.tencentcloudapi.common.Credential;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import com.tencentcloudapi.common.profile.ClientProfile;
@@ -8,10 +11,7 @@ import com.tencentcloudapi.sms.v20210111.SmsClient;
 import com.tencentcloudapi.sms.v20210111.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20210111.models.SendSmsResponse;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Properties;
 
 //导入可选配置类
 // 导入对应SMS模块的client
@@ -24,43 +24,7 @@ import java.util.Properties;
 public class SendSms
 {
 
-    public static void main(String[] args)
-    {
-        //一下为获取数据
-
-         String secretId = null;
-         String secretKey= null;
-         String sdkAppId= null;
-         String templateId= null;
-         String phoneNumberSetstring=null;
-         String templateParamSetstring=null;
-
-        Properties prop = new Properties();
-        //需要外部属性配置文件的路径
-        FileInputStream inputStream = null;
-//        try {
-        try {
-            inputStream = new FileInputStream("C:/JAVA/TencentYunMsmSdkIdAndKey.properties");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        try {
-        try {
-            prop.load(inputStream);
-            secretId = prop.getProperty("secretId");
-            secretKey = prop.getProperty("secretKey");
-            sdkAppId = prop.getProperty("sdkAppId");
-            templateId= prop.getProperty("templateId");
-            //String signName = prop.getProperty("signName");//值为中文，输出为乱码
-            phoneNumberSetstring= prop.getProperty("phoneNumberSet");
-            templateParamSetstring= prop.getProperty("templateParamSet");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+    public static void main(String[] args) throws IOException {
 
         try {
             /* 必要步骤：
@@ -69,11 +33,9 @@ public class SendSms
              * 你也可以直接在代码中写死密钥对，但是小心不要将代码复制、上传或者分享给他人，
              * 以免泄露密钥对危及你的财产安全。
              * CAM密匙查询: https://console.cloud.tencent.com/cam/capi*/
-//            DataGet dataGet = new DataGet();
-//            String secretId=this.dataGet();
-//            String secretKey=dataGet.secretKey;
-//            System.out.println(secretId);
-
+            GetData dataGet = new GetData();
+            String secretKey=dataGet.secretKey;
+            String secretId=dataGet.secretId;
             Credential cred = new Credential(secretId,secretKey);
             // 实例化一个http选项，可选，没有特殊需求可以跳过
             HttpProfile httpProfile = new HttpProfile();
@@ -111,7 +73,7 @@ public class SendSms
              * 短信控制台: https://console.cloud.tencent.com/smsv2
              * sms helper: https://cloud.tencent.com/document/product/382/3773 */
             /* 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666 */
-//            String sdkAppId = dataGet.sdkAppId;
+            String sdkAppId = dataGet.sdkAppId;
             req.setSmsSdkAppId(sdkAppId);
             /* 短信签名内容: 使用 UTF-8 编码，必须填写已审核通过的签名，签名信息可登录 [短信控制台] 查看 */
             String signName = "生活帮管家公众号";
@@ -126,22 +88,51 @@ public class SendSms
             String extendCode = "";
             req.setExtendCode(extendCode);
             /* 模板 ID: 必须填写已审核通过的模板 ID。模板ID可登录 [短信控制台] 查看 */
-//            String templateId = templateId;
+            String templateId = dataGet.templateId;
             req.setTemplateId(templateId);
             /* 下发手机号码，采用 E.164 标准，+[国家或地区码][手机号]
              * 示例如：+8613711112222， 其中前面有一个+号 ，86为国家码，13711112222为手机号，最多不要超过200个手机号 */
-//            String[] phoneNumberSet = {"+8618227962114"};
+            String phoneNumberSetstring = dataGet.phoneNumberSet;
             String[] phoneNumberSet=phoneNumberSetstring.split("@");
             req.setPhoneNumberSet(phoneNumberSet);
             /* 模板参数: 若无模板参数，则设置为空 */
-//            String[] templateParamSet = {"5678"};
+            String templateParamSetstring =dataGet.templateParamSet;
             String[] templateParamSet=templateParamSetstring.split("@");
             req.setTemplateParamSet(templateParamSet);
             /* 通过 client 对象调用 SendSms 方法发起请求。注意请求方法名与请求对象是对应的
              * 返回的 res 是一个 SendSmsResponse 类的实例，与请求对象对应 */
             SendSmsResponse res = client.SendSms(req);
+
+
+//            String c1 =SendSmsResponse.toJsonString(res);
+//
+//            JSONObject jsonObject= JSONObject.parseObject(SendSmsResponse.toJsonString(res));
+//
+//            JSONArray coderes =jsonObject.getJSONArray("SendStatusSet");
+//
+//            JSONObject coderesult= JSONObject.parseObject(coderes.toJSONString());
+//
+//
+//            String jasonarrycode=coderesult.getString("Code");
+//
+//            //String code =jasonarrycode.toString();
+//
+//            System.out.println(jasonarrycode);
+
+
+
+            JsonParser parse=new JsonParser();  //创建JSON解析器
+            JsonObject json=(JsonObject) parse.parse(SendSmsResponse.toJsonString(res));
+            //将String转成json
+            JsonArray array=json.get("SendStatusSet").getAsJsonArray();//JsonArray
+            JsonObject subObject=array.get(0).getAsJsonObject();
+            String code = subObject.get("Code").getAsString();
+            System.out.println(code);
+
+
             // 输出json格式的字符串回包
             System.out.println(SendSmsResponse.toJsonString(res));
+
             // 也可以取出单个值，你可以通过官网接口文档或跳转到response对象的定义处查看返回字段的定义
             System.out.println(res.getRequestId());
         } catch (TencentCloudSDKException e) {

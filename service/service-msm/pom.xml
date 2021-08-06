@@ -50,6 +50,12 @@
             <artifactId>tencentcloud-sdk-java</artifactId>
             <version>3.1.270</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
