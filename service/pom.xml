@@ -17,6 +17,7 @@
         <module>service_cmn</module>
         <module>service_client</module>
         <module>service-user</module>
+        <module>service-msm</module>
         <!--<module>server_gateway</module>-->
         <!--<module>service_msm</module>-->
         <!--<module>service_oss</module>-->

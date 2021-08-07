@@ -51,6 +51,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <!--<version></version>-->
         </dependency>
         <dependency>
             <groupId>cglib</groupId>

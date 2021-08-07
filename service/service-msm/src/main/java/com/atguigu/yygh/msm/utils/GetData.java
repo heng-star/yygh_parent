@@ -1,4 +1,4 @@
-package com.atguigu.yygh.msm.msmtest;
+package com.atguigu.yygh.msm.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class GetData {
     public String phoneNumberSet;
     public String templateParamSet;
 
-    public   GetData() throws IOException {
+    public GetData() throws IOException {
         Properties prop = new Properties();
         //需要外部属性配置文件的路径
         FileInputStream inputStream = null;

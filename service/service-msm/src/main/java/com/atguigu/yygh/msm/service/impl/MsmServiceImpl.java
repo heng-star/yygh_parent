@@ -1,7 +1,7 @@
 package com.atguigu.yygh.msm.service.impl;
 
-import com.atguigu.yygh.msm.msmtest.GetData;
 import com.atguigu.yygh.msm.service.MsmService;
+import com.atguigu.yygh.msm.utils.GetData;
 import com.atguigu.yygh.vo.msm.MsmVo;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -19,6 +19,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.util.Map;
+
 
 @Service
 public class MsmServiceImpl  implements MsmService  {

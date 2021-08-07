@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
 @ComponentScan(basePackages = {"com.atguigu"})
+
 public class ServiceMsmApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceMsmApplication.class, args);
