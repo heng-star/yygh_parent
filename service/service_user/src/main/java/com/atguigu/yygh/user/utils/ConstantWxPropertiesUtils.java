@@ -13,7 +13,7 @@ public class ConstantWxPropertiesUtils implements InitializingBean {
     @Value("${wx.open.app_secret}")
     private String appSecret;
 
-    @Value("${wx.open.redirect_url}")
+    @Value("${wx.open.redirect_uri}")
     private String redirectUrl;
 
     @Value("${yygh.baseUrl}")

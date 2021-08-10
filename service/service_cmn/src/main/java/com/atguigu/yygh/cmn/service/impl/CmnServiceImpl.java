@@ -106,6 +106,16 @@ public class CmnServiceImpl extends ServiceImpl<DictMapper,Dict> implements Dict
         }
     }
 
+    //根据dictCode获取下级节点
+    @Override
+    public List<Dict> findByDictCode(String dictCode) {
+        //根据dictcode获取对应id
+        Dict dict = this.getDictByDictCode(dictCode);
+        //根据id获取子节点
+        List<Dict> chlidData = this.findChlidData(dict.getId());
+        return chlidData;
+    }
+
 
     private Dict getDictByDictCode(String dictCode) {
         QueryWrapper<Dict> wrapper = new QueryWrapper<>();
@@ -113,6 +123,8 @@ public class CmnServiceImpl extends ServiceImpl<DictMapper,Dict> implements Dict
         Dict codeDict = baseMapper.selectOne(wrapper);
         return codeDict;
     }
+
+
 
 
 }

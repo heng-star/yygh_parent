@@ -12,7 +12,6 @@
         <module name="model" />
         <module name="server_gateway" />
         <module name="service-msm" />
-        <module name="service-user" />
         <module name="service_cmn" />
         <module name="service_cmn_client" />
         <module name="service_hosp" />

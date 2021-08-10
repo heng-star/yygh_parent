@@ -32,6 +32,13 @@ public class MsmServiceImpl  implements MsmService  {
             return false;
         }
 
+        int phonelength=11;
+        if(phone.length()==phonelength){
+            String qianzui="+86";
+            phone=qianzui.concat(phone);
+        }
+        System.out.println(phone);
+        System.out.println(code);
         //获取配密钥置信息
         GetData dataGet = new GetData();
         String secretKey=dataGet.secretKey;
@@ -123,7 +130,6 @@ public class MsmServiceImpl  implements MsmService  {
             JsonArray SendStatusSetarray=json.get("SendStatusSet").getAsJsonArray();//JsonArray
             JsonObject subObject=SendStatusSetarray.get(0).getAsJsonObject();
             String coderesult = subObject.get("Code").getAsString();
-
             //发送成功，返回true
         if(!coderesult.isEmpty()){
             return true;

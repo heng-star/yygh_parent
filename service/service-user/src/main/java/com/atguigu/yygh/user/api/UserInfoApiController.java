@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
-@RestController
+@RestController  //返回Json数据
 @RequestMapping("/api/user")
 public class UserInfoApiController {
 

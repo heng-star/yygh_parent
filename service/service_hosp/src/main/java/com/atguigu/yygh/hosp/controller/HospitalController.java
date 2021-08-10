@@ -14,14 +14,14 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/admin/hosp/hospital")
-@CrossOrigin
+//@CrossOrigin
 public class HospitalController {
 
     @Autowired
     private HospitalService hospitalService;
 
     //医院列表(条件查询分页)
-    @GetMapping("list/{page}/{limit}")
+    @GetMapping("findHospList/{page}/{limit}")
     public Result listHosp(@PathVariable Integer page,
                            @PathVariable Integer limit,
                            HospitalQueryVo hospitalQueryVo) {

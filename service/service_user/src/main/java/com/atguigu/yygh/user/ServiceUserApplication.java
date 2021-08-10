@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = "com.atguigu")
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "com.atguigu")
+//@CrossOrigin
 public class ServiceUserApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceUserApplication.class, args);
