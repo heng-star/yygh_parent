@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/api/msm")
-@CrossOrigin
+//@CrossOrigin
 public class MsmApiController {
 
     @Autowired

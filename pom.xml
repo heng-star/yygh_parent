@@ -7,8 +7,7 @@
         <module>model</module>
         <module>service</module>
         <module>hospital-manage</module>
-        <module>server_gateway</module>
-        <module>server_gateway</module>
+        <module>server-gateway</module>
     </modules>
     <dependencies>
         <dependency>

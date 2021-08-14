@@ -11,7 +11,6 @@ import com.sun.deploy.net.URLEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,7 +22,7 @@ import java.util.Map;
 //微信操作的接口
 @Controller
 @RequestMapping("/api/ucenter/wx")
-@CrossOrigin
+//@CrossOrigin
 public class WeixinApiController {
 
     @Autowired

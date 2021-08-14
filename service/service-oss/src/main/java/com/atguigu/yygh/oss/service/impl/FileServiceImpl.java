@@ -45,7 +45,7 @@ public class FileServiceImpl implements FileService {
             //按照当前日期，创建文件夹，上传到创建文件夹里面
             //  2021/02/02/01.jpg
             String timeUrl = new DateTime().toString("yyyy/MM/dd");
-            fileName = timeUrl+"/"+fileName;
+            fileName = "yygh-user-oss"+timeUrl+"/"+fileName;
 
             //调用方法实现上传
             // 1.jpg    /a/b/1.jpg

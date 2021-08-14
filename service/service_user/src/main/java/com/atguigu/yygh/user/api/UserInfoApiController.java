@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin
+//@CrossOrigin
 public class UserInfoApiController {
 
     @Autowired
@@ -36,7 +36,7 @@ public class UserInfoApiController {
     }
 
     //获取用户id信息接口
-    @GetMapping("auth/getUserInfo")
+    @GetMapping("auth/getUserInFo")
     public Result getUserInfo(HttpServletRequest request) {
         Long userId = AuthContextHolder.getUserId(request);
         UserInfo userInfo = userInfoService.getById(userId);

@@ -14,7 +14,7 @@
     <modules>
         <module>service_user</module>
         <module>service_hosp</module>
-        <module>service_cmn</module>
+        <module>service-cmn</module>
         <module>service_client</module>
         <module>service-user</module>
         <module>service-msm</module>

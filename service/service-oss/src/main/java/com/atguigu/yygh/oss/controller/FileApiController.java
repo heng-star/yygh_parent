@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/api/oss/file")
+//@CrossOrigin
 public class FileApiController {
 
     @Autowired
