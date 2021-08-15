@@ -11,13 +11,6 @@
 
     <artifactId>service-cmn</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 
 </project>
