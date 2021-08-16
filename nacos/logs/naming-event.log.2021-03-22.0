@@ -1,4 +1,0 @@
-2021-03-22 18:46:00,234 INFO DEFAULT_GROUP@@service_hosp {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [10.163.222.98:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2021-03-22 18:46:00,238 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service_hosp, ips: 10.163.222.98:8201_true,
-

@@ -16,13 +16,9 @@
         <module>service_hosp</module>
         <module>service-cmn</module>
         <module>service_client</module>
-        <!--<module>service-user</module>-->
         <module>service-msm</module>
         <module>service-oss</module>
-        <!--<module>server_gateway</module>-->
-        <!--<module>service_msm</module>-->
-        <!--<module>service_oss</module>-->
-        <!--<module>service_order</module>-->
+        <module>service-order</module>
         <!--<module>service_task</module>-->
         <!--<module>service_statistics</module>-->
     </modules>
