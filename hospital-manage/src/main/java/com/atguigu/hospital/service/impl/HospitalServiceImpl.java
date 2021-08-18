@@ -40,7 +40,7 @@ public class HospitalServiceImpl implements HospitalService {
         String reserveTime = (String)paramMap.get("reserveTime");
         String amount = (String)paramMap.get("amount");
 
-        Schedule schedule = this.getSchedule(hosScheduleId);
+        Schedule schedule = this.getSchedule("1L");
         if(null == schedule) {
             throw new YyghException(ResultCodeEnum.DATA_ERROR);
         }
