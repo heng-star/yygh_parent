@@ -1,7 +1,6 @@
 package com.atguigu.yygh.order.service;
 
 import com.atguigu.yygh.model.order.OrderInfo;
-import com.atguigu.yygh.model.user.UserInfo;
 import com.atguigu.yygh.vo.order.OrderCountQueryVo;
 import com.atguigu.yygh.vo.order.OrderQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -27,7 +26,7 @@ public interface OrderService extends IService<OrderInfo> {
     //就诊通知
     void patientTips();
 
-    //预约统计
+    //预约统计，热力地图
     Map<String,Object> getCountMap(OrderCountQueryVo orderCountQueryVo );
 
 }

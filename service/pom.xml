@@ -19,8 +19,8 @@
         <module>service-msm</module>
         <module>service-oss</module>
         <module>service-order</module>
-        <!--<module>service_task</module>-->
-        <!--<module>service_statistics</module>-->
+        <module>service_task</module>
+        <module>service_statistics</module>
     </modules>
     <build>
         <plugins>
